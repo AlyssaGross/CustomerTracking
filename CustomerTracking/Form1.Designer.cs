@@ -28,16 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.FirstNameLabel = new System.Windows.Forms.Label();
             this.LastNameLabel = new System.Windows.Forms.Label();
             this.BirthdayLabel = new System.Windows.Forms.Label();
@@ -106,238 +110,238 @@
             // 
             this.FirstNameLabel.AutoSize = true;
             this.FirstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstNameLabel.Location = new System.Drawing.Point(17, 11);
+            this.FirstNameLabel.Location = new System.Drawing.Point(145, 26);
+            this.FirstNameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.FirstNameLabel.Name = "FirstNameLabel";
-            this.FirstNameLabel.Size = new System.Drawing.Size(83, 16);
+            this.FirstNameLabel.Size = new System.Drawing.Size(150, 30);
             this.FirstNameLabel.TabIndex = 0;
             this.FirstNameLabel.Text = "First Name";
-            this.FirstNameLabel.Click += new System.EventHandler(this.FirstNameLabel_Click);
             // 
             // LastNameLabel
             // 
             this.LastNameLabel.AutoSize = true;
             this.LastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameLabel.Location = new System.Drawing.Point(251, 11);
+            this.LastNameLabel.Location = new System.Drawing.Point(818, 26);
+            this.LastNameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.LastNameLabel.Name = "LastNameLabel";
-            this.LastNameLabel.Size = new System.Drawing.Size(82, 16);
+            this.LastNameLabel.Size = new System.Drawing.Size(146, 30);
             this.LastNameLabel.TabIndex = 1;
             this.LastNameLabel.Text = "Last Name";
-            this.LastNameLabel.Click += new System.EventHandler(this.LastNameLabel_Click);
             // 
             // BirthdayLabel
             // 
             this.BirthdayLabel.AutoSize = true;
             this.BirthdayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BirthdayLabel.Location = new System.Drawing.Point(17, 111);
+            this.BirthdayLabel.Location = new System.Drawing.Point(145, 218);
+            this.BirthdayLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.BirthdayLabel.Name = "BirthdayLabel";
-            this.BirthdayLabel.Size = new System.Drawing.Size(65, 16);
+            this.BirthdayLabel.Size = new System.Drawing.Size(115, 30);
             this.BirthdayLabel.TabIndex = 2;
             this.BirthdayLabel.Text = "Birthday";
-            this.BirthdayLabel.Click += new System.EventHandler(this.BirthdayLabel_Click);
             // 
             // EmailLabel
             // 
             this.EmailLabel.AutoSize = true;
             this.EmailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailLabel.Location = new System.Drawing.Point(17, 58);
+            this.EmailLabel.Location = new System.Drawing.Point(145, 117);
+            this.EmailLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(47, 16);
+            this.EmailLabel.Size = new System.Drawing.Size(83, 30);
             this.EmailLabel.TabIndex = 3;
             this.EmailLabel.Text = "Email";
-            this.EmailLabel.Click += new System.EventHandler(this.EmailLabel_Click);
             // 
             // PhoneNumberLabel
             // 
             this.PhoneNumberLabel.AutoSize = true;
             this.PhoneNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNumberLabel.Location = new System.Drawing.Point(251, 58);
+            this.PhoneNumberLabel.Location = new System.Drawing.Point(818, 117);
+            this.PhoneNumberLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.PhoneNumberLabel.Name = "PhoneNumberLabel";
-            this.PhoneNumberLabel.Size = new System.Drawing.Size(110, 16);
+            this.PhoneNumberLabel.Size = new System.Drawing.Size(197, 30);
             this.PhoneNumberLabel.TabIndex = 4;
             this.PhoneNumberLabel.Text = "Phone Number";
-            this.PhoneNumberLabel.Click += new System.EventHandler(this.PhoneNumberLabel_Click);
             // 
             // CustomerSinceLabel
             // 
             this.CustomerSinceLabel.AutoSize = true;
             this.CustomerSinceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerSinceLabel.Location = new System.Drawing.Point(251, 109);
+            this.CustomerSinceLabel.Location = new System.Drawing.Point(818, 215);
+            this.CustomerSinceLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.CustomerSinceLabel.Name = "CustomerSinceLabel";
-            this.CustomerSinceLabel.Size = new System.Drawing.Size(116, 16);
+            this.CustomerSinceLabel.Size = new System.Drawing.Size(210, 30);
             this.CustomerSinceLabel.TabIndex = 5;
             this.CustomerSinceLabel.Text = "Customer Since";
-            this.CustomerSinceLabel.Click += new System.EventHandler(this.CustomerSinceLabel_Click);
             // 
             // LastPurchaseLabel
             // 
             this.LastPurchaseLabel.AutoSize = true;
             this.LastPurchaseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastPurchaseLabel.Location = new System.Drawing.Point(17, 165);
+            this.LastPurchaseLabel.Location = new System.Drawing.Point(145, 322);
+            this.LastPurchaseLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.LastPurchaseLabel.Name = "LastPurchaseLabel";
-            this.LastPurchaseLabel.Size = new System.Drawing.Size(106, 16);
+            this.LastPurchaseLabel.Size = new System.Drawing.Size(189, 30);
             this.LastPurchaseLabel.TabIndex = 6;
             this.LastPurchaseLabel.Text = "Last Purchase";
-            this.LastPurchaseLabel.Click += new System.EventHandler(this.LastPurchaseLabel_Click);
             // 
             // ReceiveTextsLabel
             // 
             this.ReceiveTextsLabel.AutoSize = true;
             this.ReceiveTextsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReceiveTextsLabel.Location = new System.Drawing.Point(17, 230);
+            this.ReceiveTextsLabel.Location = new System.Drawing.Point(145, 447);
+            this.ReceiveTextsLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.ReceiveTextsLabel.Name = "ReceiveTextsLabel";
-            this.ReceiveTextsLabel.Size = new System.Drawing.Size(108, 16);
+            this.ReceiveTextsLabel.Size = new System.Drawing.Size(188, 30);
             this.ReceiveTextsLabel.TabIndex = 7;
             this.ReceiveTextsLabel.Text = "Receive Texts";
-            this.ReceiveTextsLabel.Click += new System.EventHandler(this.ReceiveTextsLabel_Click);
             // 
             // ReceiveEmailsLabel
             // 
             this.ReceiveEmailsLabel.AutoSize = true;
             this.ReceiveEmailsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReceiveEmailsLabel.Location = new System.Drawing.Point(138, 231);
+            this.ReceiveEmailsLabel.Location = new System.Drawing.Point(387, 449);
+            this.ReceiveEmailsLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.ReceiveEmailsLabel.Name = "ReceiveEmailsLabel";
-            this.ReceiveEmailsLabel.Size = new System.Drawing.Size(117, 16);
+            this.ReceiveEmailsLabel.Size = new System.Drawing.Size(205, 30);
             this.ReceiveEmailsLabel.TabIndex = 8;
             this.ReceiveEmailsLabel.Text = "Receive Emails";
-            this.ReceiveEmailsLabel.Click += new System.EventHandler(this.ReceiveEmailsLabel_Click);
             // 
             // HasCardLabel
             // 
             this.HasCardLabel.AutoSize = true;
             this.HasCardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HasCardLabel.Location = new System.Drawing.Point(17, 293);
+            this.HasCardLabel.Location = new System.Drawing.Point(145, 568);
+            this.HasCardLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.HasCardLabel.Name = "HasCardLabel";
-            this.HasCardLabel.Size = new System.Drawing.Size(73, 16);
+            this.HasCardLabel.Size = new System.Drawing.Size(130, 30);
             this.HasCardLabel.TabIndex = 9;
             this.HasCardLabel.Text = "Has Card";
-            this.HasCardLabel.Click += new System.EventHandler(this.HasCardLabel_Click);
             // 
             // PointsLabel
             // 
             this.PointsLabel.AutoSize = true;
             this.PointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PointsLabel.Location = new System.Drawing.Point(251, 163);
+            this.PointsLabel.Location = new System.Drawing.Point(818, 318);
+            this.PointsLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.PointsLabel.Name = "PointsLabel";
-            this.PointsLabel.Size = new System.Drawing.Size(51, 16);
+            this.PointsLabel.Size = new System.Drawing.Size(90, 30);
             this.PointsLabel.TabIndex = 11;
             this.PointsLabel.Text = "Points";
-            this.PointsLabel.Click += new System.EventHandler(this.PointsLabel_Click);
             // 
             // FirstNameTextbox
             // 
             this.FirstNameTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.FirstNameTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.FirstNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstNameTextbox.Location = new System.Drawing.Point(20, 27);
+            this.FirstNameTextbox.Location = new System.Drawing.Point(151, 57);
+            this.FirstNameTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.FirstNameTextbox.Name = "FirstNameTextbox";
             this.FirstNameTextbox.ReadOnly = true;
-            this.FirstNameTextbox.Size = new System.Drawing.Size(222, 22);
+            this.FirstNameTextbox.Size = new System.Drawing.Size(442, 37);
             this.FirstNameTextbox.TabIndex = 12;
             this.FirstNameTextbox.Click += new System.EventHandler(this.textbox_Click);
-            this.FirstNameTextbox.TextChanged += new System.EventHandler(this.FirstNameTextbox_TextChanged);
             // 
             // LastNameTextbox
             // 
             this.LastNameTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.LastNameTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LastNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastNameTextbox.Location = new System.Drawing.Point(254, 27);
+            this.LastNameTextbox.Location = new System.Drawing.Point(824, 57);
+            this.LastNameTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.LastNameTextbox.Name = "LastNameTextbox";
             this.LastNameTextbox.ReadOnly = true;
-            this.LastNameTextbox.Size = new System.Drawing.Size(222, 22);
+            this.LastNameTextbox.Size = new System.Drawing.Size(442, 37);
             this.LastNameTextbox.TabIndex = 13;
             this.LastNameTextbox.Click += new System.EventHandler(this.textbox_Click);
-            this.LastNameTextbox.TextChanged += new System.EventHandler(this.LastNameTextbox_TextChanged);
             // 
             // PointsTextbox
             // 
             this.PointsTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.PointsTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PointsTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PointsTextbox.Location = new System.Drawing.Point(254, 181);
+            this.PointsTextbox.Location = new System.Drawing.Point(824, 353);
+            this.PointsTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.PointsTextbox.Name = "PointsTextbox";
             this.PointsTextbox.ReadOnly = true;
-            this.PointsTextbox.Size = new System.Drawing.Size(222, 22);
+            this.PointsTextbox.Size = new System.Drawing.Size(442, 37);
             this.PointsTextbox.TabIndex = 15;
             this.PointsTextbox.Click += new System.EventHandler(this.textbox_Click);
-            this.PointsTextbox.TextChanged += new System.EventHandler(this.PointsTextbox_TextChanged);
             // 
             // BirthdayTextbox
             // 
             this.BirthdayTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.BirthdayTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.BirthdayTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BirthdayTextbox.Location = new System.Drawing.Point(20, 128);
+            this.BirthdayTextbox.Location = new System.Drawing.Point(151, 251);
+            this.BirthdayTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.BirthdayTextbox.Name = "BirthdayTextbox";
             this.BirthdayTextbox.ReadOnly = true;
-            this.BirthdayTextbox.Size = new System.Drawing.Size(222, 22);
+            this.BirthdayTextbox.Size = new System.Drawing.Size(442, 37);
             this.BirthdayTextbox.TabIndex = 14;
             this.BirthdayTextbox.Click += new System.EventHandler(this.textbox_Click);
-            this.BirthdayTextbox.TextChanged += new System.EventHandler(this.BirthdayTextbox_TextChanged);
             // 
             // LastPurchaseTextbox
             // 
             this.LastPurchaseTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.LastPurchaseTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LastPurchaseTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastPurchaseTextbox.Location = new System.Drawing.Point(20, 181);
+            this.LastPurchaseTextbox.Location = new System.Drawing.Point(151, 353);
+            this.LastPurchaseTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.LastPurchaseTextbox.Name = "LastPurchaseTextbox";
             this.LastPurchaseTextbox.ReadOnly = true;
-            this.LastPurchaseTextbox.Size = new System.Drawing.Size(222, 22);
+            this.LastPurchaseTextbox.Size = new System.Drawing.Size(442, 37);
             this.LastPurchaseTextbox.TabIndex = 19;
             this.LastPurchaseTextbox.Click += new System.EventHandler(this.textbox_Click);
-            this.LastPurchaseTextbox.TextChanged += new System.EventHandler(this.LastPurchaseTextbox_TextChanged);
             // 
             // CustomerSinceTextbox
             // 
             this.CustomerSinceTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.CustomerSinceTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CustomerSinceTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerSinceTextbox.Location = new System.Drawing.Point(254, 128);
+            this.CustomerSinceTextbox.Location = new System.Drawing.Point(824, 251);
+            this.CustomerSinceTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.CustomerSinceTextbox.Name = "CustomerSinceTextbox";
             this.CustomerSinceTextbox.ReadOnly = true;
-            this.CustomerSinceTextbox.Size = new System.Drawing.Size(222, 22);
+            this.CustomerSinceTextbox.Size = new System.Drawing.Size(442, 37);
             this.CustomerSinceTextbox.TabIndex = 18;
             this.CustomerSinceTextbox.Click += new System.EventHandler(this.textbox_Click);
-            this.CustomerSinceTextbox.TextChanged += new System.EventHandler(this.CustomerSinceTextbox_TextChanged);
             // 
             // PhoneNumberTextbox
             // 
             this.PhoneNumberTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.PhoneNumberTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PhoneNumberTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNumberTextbox.Location = new System.Drawing.Point(254, 74);
+            this.PhoneNumberTextbox.Location = new System.Drawing.Point(824, 147);
+            this.PhoneNumberTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.PhoneNumberTextbox.Name = "PhoneNumberTextbox";
             this.PhoneNumberTextbox.ReadOnly = true;
-            this.PhoneNumberTextbox.Size = new System.Drawing.Size(222, 22);
+            this.PhoneNumberTextbox.Size = new System.Drawing.Size(442, 37);
             this.PhoneNumberTextbox.TabIndex = 17;
             this.PhoneNumberTextbox.Click += new System.EventHandler(this.textbox_Click);
-            this.PhoneNumberTextbox.TextChanged += new System.EventHandler(this.PhoneNumberTextbox_TextChanged);
             // 
             // EmailTextbox
             // 
             this.EmailTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.EmailTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.EmailTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailTextbox.Location = new System.Drawing.Point(20, 74);
+            this.EmailTextbox.Location = new System.Drawing.Point(151, 147);
+            this.EmailTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.EmailTextbox.Name = "EmailTextbox";
             this.EmailTextbox.ReadOnly = true;
-            this.EmailTextbox.Size = new System.Drawing.Size(222, 22);
+            this.EmailTextbox.Size = new System.Drawing.Size(442, 37);
             this.EmailTextbox.TabIndex = 16;
             this.EmailTextbox.Click += new System.EventHandler(this.textbox_Click);
-            this.EmailTextbox.TextChanged += new System.EventHandler(this.EmailTextbox_TextChanged);
             // 
             // ReceiveTextsCheckbox
             // 
             this.ReceiveTextsCheckbox.AutoCheck = false;
             this.ReceiveTextsCheckbox.AutoSize = true;
             this.ReceiveTextsCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReceiveTextsCheckbox.Location = new System.Drawing.Point(23, 249);
+            this.ReceiveTextsCheckbox.Location = new System.Drawing.Point(157, 484);
+            this.ReceiveTextsCheckbox.Margin = new System.Windows.Forms.Padding(6);
             this.ReceiveTextsCheckbox.Name = "ReceiveTextsCheckbox";
-            this.ReceiveTextsCheckbox.Size = new System.Drawing.Size(15, 14);
+            this.ReceiveTextsCheckbox.Size = new System.Drawing.Size(28, 27);
             this.ReceiveTextsCheckbox.TabIndex = 20;
             this.ReceiveTextsCheckbox.UseVisualStyleBackColor = true;
-            this.ReceiveTextsCheckbox.CheckedChanged += new System.EventHandler(this.ReceiveTextsCheckbox_CheckedChanged);
             this.ReceiveTextsCheckbox.Click += new System.EventHandler(this.checkbox_Click);
             // 
             // ReceiveEmailsCheckbox
@@ -345,12 +349,12 @@
             this.ReceiveEmailsCheckbox.AutoCheck = false;
             this.ReceiveEmailsCheckbox.AutoSize = true;
             this.ReceiveEmailsCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReceiveEmailsCheckbox.Location = new System.Drawing.Point(141, 249);
+            this.ReceiveEmailsCheckbox.Location = new System.Drawing.Point(393, 484);
+            this.ReceiveEmailsCheckbox.Margin = new System.Windows.Forms.Padding(6);
             this.ReceiveEmailsCheckbox.Name = "ReceiveEmailsCheckbox";
-            this.ReceiveEmailsCheckbox.Size = new System.Drawing.Size(15, 14);
+            this.ReceiveEmailsCheckbox.Size = new System.Drawing.Size(28, 27);
             this.ReceiveEmailsCheckbox.TabIndex = 21;
             this.ReceiveEmailsCheckbox.UseVisualStyleBackColor = true;
-            this.ReceiveEmailsCheckbox.CheckedChanged += new System.EventHandler(this.ReceiveEmailsCheckbox_CheckedChanged);
             this.ReceiveEmailsCheckbox.Click += new System.EventHandler(this.checkbox_Click);
             // 
             // HasCardCheckbox
@@ -358,62 +362,70 @@
             this.HasCardCheckbox.AutoCheck = false;
             this.HasCardCheckbox.AutoSize = true;
             this.HasCardCheckbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HasCardCheckbox.Location = new System.Drawing.Point(23, 312);
+            this.HasCardCheckbox.Location = new System.Drawing.Point(157, 605);
+            this.HasCardCheckbox.Margin = new System.Windows.Forms.Padding(6);
             this.HasCardCheckbox.Name = "HasCardCheckbox";
-            this.HasCardCheckbox.Size = new System.Drawing.Size(15, 14);
+            this.HasCardCheckbox.Size = new System.Drawing.Size(28, 27);
             this.HasCardCheckbox.TabIndex = 22;
             this.HasCardCheckbox.UseVisualStyleBackColor = true;
-            this.HasCardCheckbox.CheckedChanged += new System.EventHandler(this.HasCardCheckbox_CheckedChanged);
             this.HasCardCheckbox.Click += new System.EventHandler(this.checkbox_Click);
             // 
             // CustomerGrid
             // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.CustomerGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.CustomerGrid.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.CustomerGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CustomerGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.CustomerGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.CustomerGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CustomerGrid.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CustomerGrid.DefaultCellStyle = dataGridViewCellStyle2;
             this.CustomerGrid.EnableHeadersVisualStyles = false;
             this.CustomerGrid.GridColor = System.Drawing.Color.Black;
-            this.CustomerGrid.Location = new System.Drawing.Point(7, 57);
-            this.CustomerGrid.Margin = new System.Windows.Forms.Padding(2);
+            this.CustomerGrid.Location = new System.Drawing.Point(33, 115);
+            this.CustomerGrid.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerGrid.Name = "CustomerGrid";
+            this.CustomerGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.CustomerGrid.RowHeadersVisible = false;
             this.CustomerGrid.RowHeadersWidth = 82;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            this.CustomerGrid.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.CustomerGrid.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.CustomerGrid.RowTemplate.Height = 33;
             this.CustomerGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.CustomerGrid.Size = new System.Drawing.Size(487, 260);
+            this.CustomerGrid.Size = new System.Drawing.Size(1400, 514);
             this.CustomerGrid.TabIndex = 25;
-            this.CustomerGrid.ColumnHeadersDefaultCellStyleChanged += new System.EventHandler(this.CustomerGrid_ColumnHeadersDefaultCellStyleChanged);
-            this.CustomerGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.CustomerGrid.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomerGrid_CellContentDoubleClick);
-            this.CustomerGrid.SelectionChanged += new System.EventHandler(this.CustomerGrid_SelectionChanged);
             // 
             // tabControl1
             // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.CustomersTab);
             this.tabControl1.Controls.Add(this.DetailsTab);
             this.tabControl1.Controls.Add(this.TransactionsTab);
             this.tabControl1.Controls.Add(this.OrderTab);
             this.tabControl1.Controls.Add(this.ReturnTab);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(6, 45);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tabControl1.Location = new System.Drawing.Point(1, 91);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(505, 395);
+            this.tabControl1.Size = new System.Drawing.Size(1481, 793);
             this.tabControl1.TabIndex = 27;
             // 
             // CustomersTab
@@ -423,32 +435,34 @@
             this.CustomersTab.Controls.Add(this.SearchButton);
             this.CustomersTab.Controls.Add(this.ViewCustomerButton);
             this.CustomersTab.Controls.Add(this.CustomerGrid);
-            this.CustomersTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomersTab.Location = new System.Drawing.Point(4, 22);
-            this.CustomersTab.Margin = new System.Windows.Forms.Padding(2);
+            this.CustomersTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomersTab.Location = new System.Drawing.Point(8, 45);
+            this.CustomersTab.Margin = new System.Windows.Forms.Padding(4);
             this.CustomersTab.Name = "CustomersTab";
-            this.CustomersTab.Padding = new System.Windows.Forms.Padding(2);
-            this.CustomersTab.Size = new System.Drawing.Size(497, 369);
+            this.CustomersTab.Padding = new System.Windows.Forms.Padding(4);
+            this.CustomersTab.Size = new System.Drawing.Size(1465, 740);
             this.CustomersTab.TabIndex = 1;
             this.CustomersTab.Text = "Customers";
             // 
             // SearchTextbox
             // 
-            this.SearchTextbox.Location = new System.Drawing.Point(7, 26);
-            this.SearchTextbox.Margin = new System.Windows.Forms.Padding(2);
+            this.SearchTextbox.BackColor = System.Drawing.Color.Gainsboro;
+            this.SearchTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchTextbox.Location = new System.Drawing.Point(33, 39);
+            this.SearchTextbox.Margin = new System.Windows.Forms.Padding(4);
             this.SearchTextbox.Name = "SearchTextbox";
-            this.SearchTextbox.Size = new System.Drawing.Size(362, 20);
+            this.SearchTextbox.Size = new System.Drawing.Size(1154, 35);
             this.SearchTextbox.TabIndex = 28;
             // 
             // SearchButton
             // 
             this.SearchButton.BackColor = System.Drawing.Color.Gainsboro;
             this.SearchButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchButton.Location = new System.Drawing.Point(381, 26);
-            this.SearchButton.Margin = new System.Windows.Forms.Padding(2);
+            this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.SearchButton.Location = new System.Drawing.Point(1207, 39);
+            this.SearchButton.Margin = new System.Windows.Forms.Padding(4);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(113, 24);
+            this.SearchButton.Size = new System.Drawing.Size(226, 46);
             this.SearchButton.TabIndex = 27;
             this.SearchButton.Text = "Search";
             this.SearchButton.UseVisualStyleBackColor = false;
@@ -458,11 +472,11 @@
             // 
             this.ViewCustomerButton.BackColor = System.Drawing.Color.Gainsboro;
             this.ViewCustomerButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ViewCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ViewCustomerButton.Location = new System.Drawing.Point(349, 325);
-            this.ViewCustomerButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ViewCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ViewCustomerButton.Location = new System.Drawing.Point(1145, 652);
+            this.ViewCustomerButton.Margin = new System.Windows.Forms.Padding(4);
             this.ViewCustomerButton.Name = "ViewCustomerButton";
-            this.ViewCustomerButton.Size = new System.Drawing.Size(144, 36);
+            this.ViewCustomerButton.Size = new System.Drawing.Size(288, 69);
             this.ViewCustomerButton.TabIndex = 26;
             this.ViewCustomerButton.Text = "View Customer";
             this.ViewCustomerButton.UseVisualStyleBackColor = false;
@@ -495,11 +509,11 @@
             this.DetailsTab.Controls.Add(this.FirstNameTextbox);
             this.DetailsTab.Controls.Add(this.LastNameTextbox);
             this.DetailsTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DetailsTab.Location = new System.Drawing.Point(4, 22);
-            this.DetailsTab.Margin = new System.Windows.Forms.Padding(2);
+            this.DetailsTab.Location = new System.Drawing.Point(8, 45);
+            this.DetailsTab.Margin = new System.Windows.Forms.Padding(4);
             this.DetailsTab.Name = "DetailsTab";
-            this.DetailsTab.Padding = new System.Windows.Forms.Padding(2);
-            this.DetailsTab.Size = new System.Drawing.Size(497, 369);
+            this.DetailsTab.Padding = new System.Windows.Forms.Padding(4);
+            this.DetailsTab.Size = new System.Drawing.Size(1465, 740);
             this.DetailsTab.TabIndex = 0;
             this.DetailsTab.Text = "Details";
             // 
@@ -509,10 +523,10 @@
             this.ViewTransactionsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ViewTransactionsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ViewTransactionsButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ViewTransactionsButton.Location = new System.Drawing.Point(349, 325);
-            this.ViewTransactionsButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ViewTransactionsButton.Location = new System.Drawing.Point(978, 584);
+            this.ViewTransactionsButton.Margin = new System.Windows.Forms.Padding(4);
             this.ViewTransactionsButton.Name = "ViewTransactionsButton";
-            this.ViewTransactionsButton.Size = new System.Drawing.Size(144, 36);
+            this.ViewTransactionsButton.Size = new System.Drawing.Size(288, 69);
             this.ViewTransactionsButton.TabIndex = 27;
             this.ViewTransactionsButton.Text = "View Transactions";
             this.ViewTransactionsButton.UseVisualStyleBackColor = false;
@@ -523,22 +537,23 @@
             this.TransactionsTab.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TransactionsTab.Controls.Add(this.ViewTransactionButton);
             this.TransactionsTab.Controls.Add(this.TransactionGrid);
-            this.TransactionsTab.Location = new System.Drawing.Point(4, 22);
+            this.TransactionsTab.Location = new System.Drawing.Point(8, 45);
+            this.TransactionsTab.Margin = new System.Windows.Forms.Padding(6);
             this.TransactionsTab.Name = "TransactionsTab";
-            this.TransactionsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.TransactionsTab.Size = new System.Drawing.Size(497, 369);
+            this.TransactionsTab.Padding = new System.Windows.Forms.Padding(6);
+            this.TransactionsTab.Size = new System.Drawing.Size(1465, 740);
             this.TransactionsTab.TabIndex = 2;
             this.TransactionsTab.Text = "Transactions";
-            this.TransactionsTab.Click += new System.EventHandler(this.TransactionsTab_Click);
             // 
             // ViewTransactionButton
             // 
             this.ViewTransactionButton.BackColor = System.Drawing.Color.Gainsboro;
             this.ViewTransactionButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ViewTransactionButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ViewTransactionButton.Location = new System.Drawing.Point(349, 325);
+            this.ViewTransactionButton.Location = new System.Drawing.Point(582, 642);
+            this.ViewTransactionButton.Margin = new System.Windows.Forms.Padding(6);
             this.ViewTransactionButton.Name = "ViewTransactionButton";
-            this.ViewTransactionButton.Size = new System.Drawing.Size(144, 36);
+            this.ViewTransactionButton.Size = new System.Drawing.Size(288, 69);
             this.ViewTransactionButton.TabIndex = 2;
             this.ViewTransactionButton.Text = "View Transaction";
             this.ViewTransactionButton.UseVisualStyleBackColor = false;
@@ -546,48 +561,52 @@
             // 
             // TransactionGrid
             // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
-            this.TransactionGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.TransactionGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.TransactionGrid.BackgroundColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.TransactionGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.TransactionGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TransactionGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.TransactionGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TransactionGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.TransactionGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.TransactionGrid.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TransactionGrid.DefaultCellStyle = dataGridViewCellStyle6;
             this.TransactionGrid.EnableHeadersVisualStyles = false;
             this.TransactionGrid.GridColor = System.Drawing.Color.Black;
-            this.TransactionGrid.Location = new System.Drawing.Point(8, 7);
+            this.TransactionGrid.Location = new System.Drawing.Point(255, 12);
+            this.TransactionGrid.Margin = new System.Windows.Forms.Padding(6);
             this.TransactionGrid.Name = "TransactionGrid";
             this.TransactionGrid.ReadOnly = true;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.TransactionGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TransactionGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.TransactionGrid.RowHeadersVisible = false;
+            this.TransactionGrid.RowHeadersWidth = 82;
             this.TransactionGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.TransactionGrid.Size = new System.Drawing.Size(484, 312);
+            this.TransactionGrid.Size = new System.Drawing.Size(968, 600);
             this.TransactionGrid.TabIndex = 0;
-            this.TransactionGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TransactionGrid_CellContentClick);
             // 
             // OrderTab
             // 
@@ -603,45 +622,48 @@
             this.OrderTab.Controls.Add(this.ArrivalDateLabel);
             this.OrderTab.Controls.Add(this.ShippedDateLabel);
             this.OrderTab.Controls.Add(this.PurchaseDateLabel);
-            this.OrderTab.Location = new System.Drawing.Point(4, 22);
+            this.OrderTab.Location = new System.Drawing.Point(8, 45);
+            this.OrderTab.Margin = new System.Windows.Forms.Padding(6);
             this.OrderTab.Name = "OrderTab";
-            this.OrderTab.Padding = new System.Windows.Forms.Padding(3);
-            this.OrderTab.Size = new System.Drawing.Size(497, 369);
+            this.OrderTab.Padding = new System.Windows.Forms.Padding(6);
+            this.OrderTab.Size = new System.Drawing.Size(1465, 740);
             this.OrderTab.TabIndex = 3;
             this.OrderTab.Text = "Order";
-            this.OrderTab.Click += new System.EventHandler(this.OrderTab_Click);
             // 
             // TotalTextbox
             // 
             this.TotalTextbox.BackColor = System.Drawing.Color.Gainsboro;
-            this.TotalTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TotalTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TotalTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalTextbox.Location = new System.Drawing.Point(428, 341);
+            this.TotalTextbox.Location = new System.Drawing.Point(1256, 668);
+            this.TotalTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.TotalTextbox.Name = "TotalTextbox";
             this.TotalTextbox.ReadOnly = true;
-            this.TotalTextbox.Size = new System.Drawing.Size(53, 22);
+            this.TotalTextbox.Size = new System.Drawing.Size(175, 30);
             this.TotalTextbox.TabIndex = 13;
-            this.TotalTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TotalTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TotalLabel
             // 
             this.TotalLabel.AutoSize = true;
+            this.TotalLabel.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.TotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLabel.Location = new System.Drawing.Point(328, 343);
+            this.TotalLabel.Location = new System.Drawing.Point(1086, 668);
+            this.TotalLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.TotalLabel.Name = "TotalLabel";
-            this.TotalLabel.Size = new System.Drawing.Size(95, 16);
+            this.TotalLabel.Size = new System.Drawing.Size(170, 30);
             this.TotalLabel.TabIndex = 12;
             this.TotalLabel.Text = "Order Total :";
-            this.TotalLabel.Click += new System.EventHandler(this.TotalLabel_Click);
             // 
             // CustomerFeedbackTextbox
             // 
             this.CustomerFeedbackTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.CustomerFeedbackTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CustomerFeedbackTextbox.Location = new System.Drawing.Point(15, 70);
+            this.CustomerFeedbackTextbox.Location = new System.Drawing.Point(31, 133);
+            this.CustomerFeedbackTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.CustomerFeedbackTextbox.Name = "CustomerFeedbackTextbox";
             this.CustomerFeedbackTextbox.ReadOnly = true;
-            this.CustomerFeedbackTextbox.Size = new System.Drawing.Size(466, 20);
+            this.CustomerFeedbackTextbox.Size = new System.Drawing.Size(1400, 38);
             this.CustomerFeedbackTextbox.TabIndex = 11;
             this.CustomerFeedbackTextbox.Click += new System.EventHandler(this.textbox_Click);
             // 
@@ -649,10 +671,11 @@
             // 
             this.ArrivalDateTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.ArrivalDateTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ArrivalDateTextbox.Location = new System.Drawing.Point(335, 27);
+            this.ArrivalDateTextbox.Location = new System.Drawing.Point(737, 54);
+            this.ArrivalDateTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.ArrivalDateTextbox.Name = "ArrivalDateTextbox";
             this.ArrivalDateTextbox.ReadOnly = true;
-            this.ArrivalDateTextbox.Size = new System.Drawing.Size(148, 20);
+            this.ArrivalDateTextbox.Size = new System.Drawing.Size(294, 38);
             this.ArrivalDateTextbox.TabIndex = 10;
             this.ArrivalDateTextbox.Click += new System.EventHandler(this.textbox_Click);
             // 
@@ -660,10 +683,11 @@
             // 
             this.ShippedDateTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.ShippedDateTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ShippedDateTextbox.Location = new System.Drawing.Point(175, 27);
+            this.ShippedDateTextbox.Location = new System.Drawing.Point(378, 54);
+            this.ShippedDateTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.ShippedDateTextbox.Name = "ShippedDateTextbox";
             this.ShippedDateTextbox.ReadOnly = true;
-            this.ShippedDateTextbox.Size = new System.Drawing.Size(148, 20);
+            this.ShippedDateTextbox.Size = new System.Drawing.Size(294, 38);
             this.ShippedDateTextbox.TabIndex = 9;
             this.ShippedDateTextbox.Click += new System.EventHandler(this.textbox_Click);
             // 
@@ -671,40 +695,62 @@
             // 
             this.PurchaseDateTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.PurchaseDateTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PurchaseDateTextbox.Location = new System.Drawing.Point(16, 27);
+            this.PurchaseDateTextbox.Location = new System.Drawing.Point(33, 52);
+            this.PurchaseDateTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.PurchaseDateTextbox.Name = "PurchaseDateTextbox";
             this.PurchaseDateTextbox.ReadOnly = true;
-            this.PurchaseDateTextbox.Size = new System.Drawing.Size(148, 20);
+            this.PurchaseDateTextbox.Size = new System.Drawing.Size(294, 38);
             this.PurchaseDateTextbox.TabIndex = 8;
             this.PurchaseDateTextbox.Click += new System.EventHandler(this.textbox_Click);
             // 
             // OrderLinesGrid
             // 
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            this.OrderLinesGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.OrderLinesGrid.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.OrderLinesGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.OrderLinesGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.OrderLinesGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.OrderLinesGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle20.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.OrderLinesGrid.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.OrderLinesGrid.DefaultCellStyle = dataGridViewCellStyle9;
+            this.OrderLinesGrid.EnableHeadersVisualStyles = false;
             this.OrderLinesGrid.GridColor = System.Drawing.Color.Black;
-            this.OrderLinesGrid.Location = new System.Drawing.Point(13, 102);
+            this.OrderLinesGrid.Location = new System.Drawing.Point(31, 197);
+            this.OrderLinesGrid.Margin = new System.Windows.Forms.Padding(6);
             this.OrderLinesGrid.Name = "OrderLinesGrid";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.DarkSeaGreen;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.OrderLinesGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.OrderLinesGrid.RowHeadersVisible = false;
+            this.OrderLinesGrid.RowHeadersWidth = 82;
             this.OrderLinesGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.OrderLinesGrid.Size = new System.Drawing.Size(469, 236);
+            this.OrderLinesGrid.Size = new System.Drawing.Size(1400, 471);
             this.OrderLinesGrid.TabIndex = 7;
             // 
             // CustomerFeedbackLabel
             // 
             this.CustomerFeedbackLabel.AutoSize = true;
             this.CustomerFeedbackLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerFeedbackLabel.Location = new System.Drawing.Point(11, 54);
+            this.CustomerFeedbackLabel.Location = new System.Drawing.Point(22, 101);
+            this.CustomerFeedbackLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.CustomerFeedbackLabel.Name = "CustomerFeedbackLabel";
-            this.CustomerFeedbackLabel.Size = new System.Drawing.Size(147, 16);
+            this.CustomerFeedbackLabel.Size = new System.Drawing.Size(261, 30);
             this.CustomerFeedbackLabel.TabIndex = 6;
             this.CustomerFeedbackLabel.Text = "Customer Feedback";
             // 
@@ -712,9 +758,10 @@
             // 
             this.ArrivalDateLabel.AutoSize = true;
             this.ArrivalDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ArrivalDateLabel.Location = new System.Drawing.Point(331, 10);
+            this.ArrivalDateLabel.Location = new System.Drawing.Point(732, 21);
+            this.ArrivalDateLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.ArrivalDateLabel.Name = "ArrivalDateLabel";
-            this.ArrivalDateLabel.Size = new System.Drawing.Size(85, 16);
+            this.ArrivalDateLabel.Size = new System.Drawing.Size(150, 30);
             this.ArrivalDateLabel.TabIndex = 5;
             this.ArrivalDateLabel.Text = "Arival Date";
             // 
@@ -722,9 +769,10 @@
             // 
             this.ShippedDateLabel.AutoSize = true;
             this.ShippedDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShippedDateLabel.Location = new System.Drawing.Point(171, 10);
+            this.ShippedDateLabel.Location = new System.Drawing.Point(373, 21);
+            this.ShippedDateLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.ShippedDateLabel.Name = "ShippedDateLabel";
-            this.ShippedDateLabel.Size = new System.Drawing.Size(103, 16);
+            this.ShippedDateLabel.Size = new System.Drawing.Size(179, 30);
             this.ShippedDateLabel.TabIndex = 4;
             this.ShippedDateLabel.Text = "Shipped Date";
             // 
@@ -732,9 +780,10 @@
             // 
             this.PurchaseDateLabel.AutoSize = true;
             this.PurchaseDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PurchaseDateLabel.Location = new System.Drawing.Point(12, 11);
+            this.PurchaseDateLabel.Location = new System.Drawing.Point(24, 21);
+            this.PurchaseDateLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.PurchaseDateLabel.Name = "PurchaseDateLabel";
-            this.PurchaseDateLabel.Size = new System.Drawing.Size(110, 16);
+            this.PurchaseDateLabel.Size = new System.Drawing.Size(195, 30);
             this.PurchaseDateLabel.TabIndex = 3;
             this.PurchaseDateLabel.Text = "Purchase Date";
             // 
@@ -746,114 +795,138 @@
             this.ReturnTab.Controls.Add(this.ReturnDateTextbox);
             this.ReturnTab.Controls.Add(this.ReturnLinesGrid);
             this.ReturnTab.Controls.Add(this.ReturnDateLabel);
-            this.ReturnTab.Location = new System.Drawing.Point(4, 22);
+            this.ReturnTab.Location = new System.Drawing.Point(8, 45);
+            this.ReturnTab.Margin = new System.Windows.Forms.Padding(6);
             this.ReturnTab.Name = "ReturnTab";
-            this.ReturnTab.Padding = new System.Windows.Forms.Padding(3);
-            this.ReturnTab.Size = new System.Drawing.Size(497, 369);
+            this.ReturnTab.Padding = new System.Windows.Forms.Padding(6);
+            this.ReturnTab.Size = new System.Drawing.Size(1465, 740);
             this.ReturnTab.TabIndex = 4;
             this.ReturnTab.Text = "Return";
             // 
             // Total2Textbox
             // 
             this.Total2Textbox.BackColor = System.Drawing.Color.Gainsboro;
-            this.Total2Textbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Total2Textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Total2Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total2Textbox.Location = new System.Drawing.Point(431, 341);
+            this.Total2Textbox.ForeColor = System.Drawing.Color.Black;
+            this.Total2Textbox.Location = new System.Drawing.Point(1255, 645);
+            this.Total2Textbox.Margin = new System.Windows.Forms.Padding(6);
             this.Total2Textbox.Name = "Total2Textbox";
             this.Total2Textbox.ReadOnly = true;
-            this.Total2Textbox.Size = new System.Drawing.Size(53, 22);
+            this.Total2Textbox.Size = new System.Drawing.Size(175, 30);
             this.Total2Textbox.TabIndex = 18;
-            this.Total2Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.Total2Textbox.TextChanged += new System.EventHandler(this.Total2Textbox_TextChanged);
+            this.Total2Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Total2Label
             // 
             this.Total2Label.AutoSize = true;
+            this.Total2Label.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.Total2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total2Label.Location = new System.Drawing.Point(324, 343);
+            this.Total2Label.Location = new System.Drawing.Point(1076, 645);
+            this.Total2Label.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.Total2Label.Name = "Total2Label";
-            this.Total2Label.Size = new System.Drawing.Size(101, 16);
+            this.Total2Label.Size = new System.Drawing.Size(179, 30);
             this.Total2Label.TabIndex = 17;
             this.Total2Label.Text = "Total Refund:";
-            this.Total2Label.Click += new System.EventHandler(this.label2_Click);
             // 
             // ReturnDateTextbox
             // 
             this.ReturnDateTextbox.BackColor = System.Drawing.Color.Gainsboro;
             this.ReturnDateTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ReturnDateTextbox.Location = new System.Drawing.Point(15, 27);
+            this.ReturnDateTextbox.ForeColor = System.Drawing.Color.Black;
+            this.ReturnDateTextbox.Location = new System.Drawing.Point(30, 52);
+            this.ReturnDateTextbox.Margin = new System.Windows.Forms.Padding(6);
             this.ReturnDateTextbox.Name = "ReturnDateTextbox";
             this.ReturnDateTextbox.ReadOnly = true;
-            this.ReturnDateTextbox.Size = new System.Drawing.Size(148, 20);
+            this.ReturnDateTextbox.Size = new System.Drawing.Size(294, 38);
             this.ReturnDateTextbox.TabIndex = 16;
+            this.ReturnDateTextbox.Click += new System.EventHandler(this.textbox_Click);
             // 
             // ReturnLinesGrid
             // 
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            this.ReturnLinesGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
             this.ReturnLinesGrid.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.ReturnLinesGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ReturnLinesGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.ReturnLinesGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ReturnLinesGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.ReturnLinesGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle13.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.Silver;
             dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ReturnLinesGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
-            this.ReturnLinesGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ReturnLinesGrid.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ReturnLinesGrid.DefaultCellStyle = dataGridViewCellStyle13;
             this.ReturnLinesGrid.EnableHeadersVisualStyles = false;
             this.ReturnLinesGrid.GridColor = System.Drawing.Color.Black;
-            this.ReturnLinesGrid.Location = new System.Drawing.Point(15, 58);
+            this.ReturnLinesGrid.Location = new System.Drawing.Point(30, 96);
+            this.ReturnLinesGrid.Margin = new System.Windows.Forms.Padding(6);
             this.ReturnLinesGrid.Name = "ReturnLinesGrid";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ReturnLinesGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.ReturnLinesGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ReturnLinesGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.ReturnLinesGrid.RowHeadersVisible = false;
+            this.ReturnLinesGrid.RowHeadersWidth = 82;
             this.ReturnLinesGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ReturnLinesGrid.Size = new System.Drawing.Size(469, 277);
+            this.ReturnLinesGrid.Size = new System.Drawing.Size(1400, 549);
             this.ReturnLinesGrid.TabIndex = 15;
             // 
             // ReturnDateLabel
             // 
             this.ReturnDateLabel.AutoSize = true;
             this.ReturnDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReturnDateLabel.Location = new System.Drawing.Point(14, 10);
+            this.ReturnDateLabel.Location = new System.Drawing.Point(28, 19);
+            this.ReturnDateLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.ReturnDateLabel.Name = "ReturnDateLabel";
-            this.ReturnDateLabel.Size = new System.Drawing.Size(90, 16);
+            this.ReturnDateLabel.Size = new System.Drawing.Size(162, 30);
             this.ReturnDateLabel.TabIndex = 14;
             this.ReturnDateLabel.Text = "Return Date";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(145, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(522, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 29);
+            this.label1.Size = new System.Drawing.Size(493, 85);
             this.label1.TabIndex = 28;
             this.label1.Text = "Customer Tracking";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CustomerTrackingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(517, 449);
+            this.ClientSize = new System.Drawing.Size(1485, 885);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1511, 956);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1511, 956);
             this.Name = "CustomerTrackingForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer Tracking";
             this.Load += new System.EventHandler(this.CustomerTrackingForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CustomerGrid)).EndInit();

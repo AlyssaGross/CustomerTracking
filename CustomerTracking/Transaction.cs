@@ -8,21 +8,26 @@ namespace CustomerTracking
 {
     abstract class Transaction
     {
+        #region Protected Fields
         protected string _orderID;
         protected string _customerID;
         protected DateTime _transactionDate;
+        #endregion
 
+        #region Constructor
         public Transaction(string orderID, string customerID, DateTime transactionDate)
         {
             _orderID         = orderID;
             _customerID      = customerID;
             _transactionDate = transactionDate;
         }
+        #endregion
 
+        #region Public Method
         public abstract decimal getTotal();
+        #endregion
 
-        public abstract void print();
-
+        #region Properties
         public string OrderID
         {
             get
@@ -46,6 +51,7 @@ namespace CustomerTracking
                 return _transactionDate;
             }
         }
+        #endregion
 
     }
 }

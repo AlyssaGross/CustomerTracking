@@ -10,27 +10,29 @@ namespace CustomerTracking
 
     class Order : Transaction
     {
+        #region Static Field
         public static List<Order> OrderList = new List<Order> { };
+        #endregion
 
+        #region Private Fields
         private DateTime _shippedDate;
         private DateTime _arrivalDate;
         private string _orderFeedback;
-    //    private int _pointsRedeemed;
         private List<OrderLine> _orderLines;
+        #endregion
 
+        #region Contructor
         public Order(string orderID, string customerID, DateTime purchaseDate,
-                        DateTime shippedDate, DateTime recievedDate, string orderFeedback/*, int pointsRedeemed*/) : base(orderID, customerID, purchaseDate)
+                        DateTime shippedDate, DateTime recievedDate, string orderFeedback) : base(orderID, customerID, purchaseDate)
         {
             _shippedDate    = shippedDate;
             _arrivalDate    = recievedDate;
             _orderFeedback  = orderFeedback;
             _orderLines = new List<OrderLine> { };
-
-            //get customer and add points from this total 
-            
-           // _pointsRedeemed = pointsRedeemed;
         }
+        #endregion
 
+        #region Public Methods
         public override decimal getTotal()
         {
 
@@ -44,16 +46,58 @@ namespace CustomerTracking
             return total;
         }
 
-        public override void print()
+        public void updatePoints()
         {
-            foreach (OrderLine line in _orderLines)
-            {
-                Console.WriteLine(line.ToString());
-            }
-
-            Console.WriteLine("\n Total:".PadLeft(52) + " " + getTotal().ToString().PadLeft(6));
+            Customer customer = Customer.CustomerList.Where(c => c.CustomerID == _customerID).First();
+            customer.updatePoints((int)(getTotal() / 10));
         }
 
+        public void updateLastPurchase()
+        {
+            Customer customer = Customer.CustomerList.Where(c => c.CustomerID == _customerID).First();
+            customer.updateLastPurchase(_transactionDate);
+        }
+
+        public void updateCustomerSince()
+        {
+            Customer customer = Customer.CustomerList.Where(c => c.CustomerID == _customerID).First();
+            customer.updateCustomerSince(_transactionDate);
+        }
+        #endregion
+
+        #region Properties
+        public DateTime ShippedDate
+        {
+            get
+            {
+                return _shippedDate;
+            }
+        }
+        public DateTime ArrivalDate
+        {
+            get
+            {
+                return _arrivalDate;
+            }
+        }
+        public string OrderFeedback
+        {
+            get
+            {
+                return _orderFeedback;
+            }
+        }
+
+        public List<OrderLine> OrderLines
+        {
+            get
+            {
+                return _orderLines;
+            }
+        }
+        #endregion
+
+        #region Static Methods
         static public void populateOrderList()
         {
 
@@ -122,47 +166,10 @@ namespace CustomerTracking
 
                 tempOrder.updatePoints();
                 tempOrder.updateLastPurchase();
+                tempOrder.updateCustomerSince();
             }
         }
+        #endregion
 
-        public void updatePoints() {
-            Customer customer = Customer.CustomerList.Where(c => c.CustomerID == _customerID).First();
-            customer.updatePoints((int)(getTotal()/10));
-        }
-
-        public void updateLastPurchase() {
-            Customer customer = Customer.CustomerList.Where(c => c.CustomerID == _customerID).First();
-            customer.updateLastPurchase(_transactionDate);
-        }
-
-        public DateTime ShippedDate
-        {
-            get
-            {
-                return _shippedDate;
-            }
-        }
-        public DateTime ArrivalDate
-        {
-            get
-            {
-                return _arrivalDate;
-            }
-        }
-        public string OrderFeedback
-        {
-            get
-            {
-                return _orderFeedback;
-            }
-        }
-
-        public List<OrderLine> OrderLines
-        {
-            get
-            {
-                return _orderLines;
-            }
-        }
     }
 }

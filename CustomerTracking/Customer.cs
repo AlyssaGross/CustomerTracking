@@ -10,26 +10,28 @@ namespace CustomerTracking
 {
     class Customer
     {
+        #region Static Fields
         static List<Customer> _customerList = new List<Customer> { };
+        #endregion
 
-        string _customerID;
-        string _fname;
-        string _lname;
-        DateTime _birthday;
-        string _phoneNo;
-        string _email;
-        DateTime? _customerSince;
-        DateTime? _lastPurchase;
-        int _points;
-        bool _receiveTexts;
-        bool _receiveEmails;
-        bool _hasCard;
-       // List<Order> _orders;
-       // List<Return> _returns;
+        #region Private Fields
+        private string _customerID;
+        private string _fname;
+        private string _lname;
+        private DateTime _birthday;
+        private string _phoneNo;
+        private string _email;
+        private DateTime _customerSince;
+        private DateTime _lastPurchase;
+        private int _points;
+        private bool _receiveTexts;
+        private bool _receiveEmails;
+        private bool _hasCard;
+        #endregion
 
         #region Constructor 
-        public Customer(string customerID, string fname, string lname, DateTime birthday, string phoneNo, string email, DateTime? customerSince,
-                        DateTime? lastPurchase, /*int points,*/ bool receiveTexts, bool receiveEmails, bool hasCard)
+        public Customer(string customerID, string fname, string lname, DateTime birthday, string phoneNo, string email, DateTime customerSince,
+                        DateTime lastPurchase, bool receiveTexts, bool receiveEmails, bool hasCard)
         {
             _customerID = customerID;
             _fname         = fname;
@@ -43,12 +45,10 @@ namespace CustomerTracking
             _receiveTexts  = receiveTexts;
             _receiveEmails = receiveEmails;
             _hasCard       = hasCard;
-
-           // _customerList.Add(this);
-           // _customerList.Sort((x, y) => x._lname.CompareTo(y._lname));
         }
         #endregion
 
+        #region Public Methods
         public void updatePoints(int points)
         {
             _points += points;
@@ -61,6 +61,14 @@ namespace CustomerTracking
             }
         }
 
+        public void updateCustomerSince(DateTime purchaseDate) {
+
+            if (purchaseDate < _customerSince)
+            {
+                _customerSince = purchaseDate;
+            }
+        }
+
         public int getAge()
         {
             int age;
@@ -69,7 +77,76 @@ namespace CustomerTracking
 
             return age;
         }
+        #endregion
 
+        #region Properties
+        public static List<Customer> CustomerList
+        {
+            get { return _customerList; }
+        }
+
+        public string CustomerID
+        {
+            get { return _customerID; }
+        }
+
+        public string LastName
+        {
+            get { return _lname; }
+        }
+
+        public string FirstName
+        {
+            get { return _fname; }
+        }
+
+        public DateTime Birthday
+        {
+            get { return _birthday; }
+        }
+
+        public string PhoneNumber
+        {
+            get { return _phoneNo; }
+        }
+
+        public string Email
+        {
+            get { return _email; }
+        }
+
+        public DateTime CustomerSince
+        {
+            get { return _customerSince; }
+        }
+
+        public DateTime LastPurchase
+        {
+            get { return _lastPurchase; }
+        }
+
+        public int Points
+        {
+            get { return _points; }
+        }
+
+        public bool ReceiveTexts
+        {
+            get { return _receiveTexts; }
+        }
+
+        public bool ReceiveEmails
+        {
+            get { return _receiveEmails; }
+        }
+
+        public bool HasCard
+        {
+            get { return _hasCard; }
+        }
+        #endregion
+
+        #region Static Methods
         static public void populateCustomerList()
         {
 
@@ -77,8 +154,7 @@ namespace CustomerTracking
 
             string[] custElems, dateElems;
             string customerLine, customerID, fname, lname, phoneNo, email;
-            DateTime birthday;
-            DateTime? customerSince, lastPurchase;
+            DateTime birthday, customerSince, lastPurchase;
             int points;
             bool receiveTexts, receiveEmails, hasCard;
 
@@ -105,7 +181,7 @@ namespace CustomerTracking
                 }
                 else
                 {
-                    customerSince = null;
+                    customerSince = new DateTime(1, 1, 1);
                 }
                 dateElems = custElems[7].Split('/');
                 if (dateElems.Length == 3)
@@ -114,95 +190,18 @@ namespace CustomerTracking
                 }
                 else
                 {
-                    lastPurchase = null;
+                    lastPurchase = new DateTime(1, 1, 1);
                 }
-               // points = int.Parse(custElems[8]);
                 receiveTexts = bool.Parse(custElems[8]);
                 receiveEmails = bool.Parse(custElems[9]);
                 hasCard = bool.Parse(custElems[10]);
-                //  Customer temp = new Customer(customerID, fname, lname, birthday, phoneNo, email, customerSince,
-                //                                  lastPurchase, points, receiveTexts, receiveEmails, hasCard );
+
                 _customerList.Add(new Customer(customerID, fname, lname, birthday, phoneNo, email, customerSince,
-                                                lastPurchase, /*points,*/ receiveTexts, receiveEmails, hasCard));
+                                                lastPurchase, receiveTexts, receiveEmails, hasCard));
             }
+
+            _customerList = _customerList.OrderBy(c => c.LastName).ToList();
         }
-
-   /*     public static void writeCustomersToFile(){
-            string lineToWrite = "";
-            StreamWriter customerFile = new StreamWriter("Customers.txt", false);
-            foreach ( Customer c in _customerList){
-                lineToWrite = c._fname + "," + c._lname + "/t"
-                            + c._birthday.ToString("MM/dd/yyyy") + ","
-                            + c._phoneNo + "," + c._email + ",";
-                if(c._customerSince != null) {
-                    lineToWrite += ((DateTime)c._customerSince).ToString("MM/dd/yyyy");
-                }
-                lineToWrite += ",";
-                if (c._lastPurchase != null) {
-                    lineToWrite += ((DateTime)c._lastPurchase).ToString("MM/dd/yyyy");
-                }
-                lineToWrite += "," + c._receiveTexts.ToString() + "," 
-                            + c._receiveEmails.ToString() + "," + c._hasCard.ToString();
-
-                customerFile.WriteLine(lineToWrite);
-                Console.WriteLine(lineToWrite);
-            }
-        }*/
-
-        public static List<Customer> CustomerList
-        {
-            get { return _customerList; }
-        }
-
-        public string CustomerID
-        {
-            get { return _customerID;  }
-        }
-
-        public string FirstName {
-            get { return _fname; }
-        }
-
-        public string LastName {
-            get { return _lname; }
-        }
-
-        public DateTime? Birthday {
-            get { return _birthday; }
-        }
-
-        public string PhoneNumber {
-            get { return _phoneNo; }
-        }
-
-        public string Email {
-            get { return _email; }
-        }
-
-        public DateTime? CustomerSince
-        {
-            get { return _customerSince; }
-        }
-
-        public DateTime? LastPurchase
-        {
-            get { return _lastPurchase; }
-        }
-
-        public int Points {
-            get { return _points; }
-        }
-
-        public bool ReceiveTexts {
-            get { return _receiveTexts; }
-        }
-
-        public bool ReceiveEmails {
-            get { return _receiveEmails; }
-        }    
-
-        public bool HasCard {
-            get { return _hasCard; }
-        }    
+        #endregion
     }
 }

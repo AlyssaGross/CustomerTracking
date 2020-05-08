@@ -8,11 +8,14 @@ namespace CustomerTracking
 {
     class ReturnLine
     {
-        int       _returnLine;
-        OrderLine _orderLine;
-        int       _quantity;
-        string    _reasonForReturn;
+        #region Private Fields
+        private int       _returnLine;
+        private OrderLine _orderLine;
+        private int       _quantity;
+        private string    _reasonForReturn;
+        #endregion
 
+        #region Constructor
         public ReturnLine(int returnLine, OrderLine orderLine, int quantity, string reasonForReturn) {
 
             _returnLine      = returnLine;
@@ -20,7 +23,9 @@ namespace CustomerTracking
             _quantity        = quantity;
             _reasonForReturn = reasonForReturn;
         }
+        #endregion
 
+        #region Public Methods
         public decimal getLineTotal() {
         
             return (_orderLine.getItemTotal() * _quantity);
@@ -32,7 +37,9 @@ namespace CustomerTracking
             return _returnLine.ToString().PadRight(3) + " " + item.ToString() + " x" +
                          _quantity.ToString().PadRight(2) +  " @ " + getLineTotal().ToString().PadLeft(6);
         }
+        #endregion
 
+        #region Properties
         public string ItemName
         {
             get
@@ -72,6 +79,7 @@ namespace CustomerTracking
                 return _reasonForReturn;
             }
         }
+        #endregion
 
     }
 }

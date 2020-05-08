@@ -8,11 +8,14 @@ namespace CustomerTracking
 {
     public class OrderLine
     {
-        int _number;
-        string _itemID;
-        int _quantity;
-        decimal _discount;
+        #region Private Fields
+        private int _number;
+        private string _itemID;
+        private int _quantity;
+        private decimal _discount;
+        #endregion
 
+        #region Constructor
         public OrderLine(int number, string itemID, int quantity, decimal discount)
         {
             _number = number;
@@ -20,7 +23,31 @@ namespace CustomerTracking
             _quantity = quantity;
             _discount = discount;
         }
+        #endregion
 
+        #region Public Method
+        public decimal getItemTotal()
+        {
+            Item item = Item.ItemList.Where(i => i.ItemID == _itemID).First();
+            return item.ItemPrice - _discount;
+        }
+
+        public decimal getLineTotal()
+        {
+
+            return getItemTotal() * (decimal)_quantity;
+        }
+
+        public override string ToString()
+        {
+            Item item = Item.ItemList.Where(i => i.ItemID == _itemID).First();
+            return _number.ToString().PadRight(3) + " " + item.ToString() + " x" +
+                         _quantity.ToString().PadRight(2) + "  @ (" + item.ItemPrice.ToString().PadLeft(5) +
+                         " - " + _discount.ToString().PadLeft(5) + ")   " + getLineTotal().ToString().PadLeft(6);
+        }
+        #endregion
+
+        #region Properties
         public int LineNumber
         {
             get
@@ -68,27 +95,6 @@ namespace CustomerTracking
             }
         }
         
-
-        public decimal getItemTotal()
-        {
-            Item item = Item.ItemList.Where(i => i.ItemID == _itemID).First();
-            return item.ItemPrice - _discount;
-        }
-
-        public decimal getLineTotal()
-        {
-
-            return getItemTotal() * (decimal)_quantity;
-        }
-
-        public override string ToString()
-        {
-            Item item = Item.ItemList.Where(i => i.ItemID == _itemID).First();
-            return _number.ToString().PadRight(3) + " " + item.ToString() + " x" +
-                         _quantity.ToString().PadRight(2) + "  @ (" + item.ItemPrice.ToString().PadLeft(5) +
-                         " - " + _discount.ToString().PadLeft(5) + ")   " + getLineTotal().ToString().PadLeft(6);
-        }
-
         public decimal LineTotal
         {
             get
@@ -96,5 +102,6 @@ namespace CustomerTracking
                 return getLineTotal();
             }
         }
+        #endregion
     }
 }

@@ -9,32 +9,24 @@ namespace CustomerTracking
 {
     class Return : Transaction
     {
+        #region Static Fields
         public static List<Return> ReturnList = new List<Return> { };
+        #endregion
+
+        #region Private Fields
         private string _returnID;
         private List<ReturnLine> _returnLines;
+        #endregion
 
+        #region Constructor
         public Return(string returnID, string orderID, string customerID, DateTime returnDate) : base(orderID, customerID, returnDate)
         {
             _returnID = returnID;
             _returnLines = new List<ReturnLine> { };
         }
-
-        public string ReturnID
-        {
-            get
-            {
-                return _returnID;
-            }
-        }
-
-        public List<ReturnLine> ReturnLines
-        {
-            get
-            {
-                return _returnLines;
-            }
-        }
-
+        #endregion
+        
+        #region Public Methods
         public override decimal getTotal(){
 
             decimal total = 0;
@@ -46,16 +38,24 @@ namespace CustomerTracking
             return total;
         }
 
-        public override void print() {
-
-            foreach (ReturnLine line in _returnLines)
-            {
-                Console.WriteLine(line.ToString());
-            }
-
-            Console.WriteLine("\n Total:".PadLeft(32) + " " + getTotal().ToString().PadLeft(6));
+        public void updatePoints()
+        {
+            Customer customer = Customer.CustomerList.Where(c => c.CustomerID == _customerID).First();
+            customer.updatePoints((int)(-getTotal() / 10));
         }
+        #endregion
 
+        #region Properties
+        public List<ReturnLine> ReturnLines
+        {
+            get
+            {
+                return _returnLines;
+            }
+        }
+        #endregion
+
+        #region Static Methods
         static public void populateReturnList()
         {
 
@@ -111,8 +111,10 @@ namespace CustomerTracking
                 }
 
                 ReturnList.Add(tempReturn);
+                tempReturn.updatePoints();
             }
         }
+        #endregion
 
     }
 }

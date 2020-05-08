@@ -7,17 +7,34 @@ using System.Threading.Tasks;
 
 namespace CustomerTracking {
     public class Item {
+
+        #region Static Fields
         public static List<Item> ItemList = new List<Item> { };
+        #endregion
+
+        #region Private Fields
         private string _itemID;
         private string _itemName;
         private decimal _itemPrice;
+        #endregion
 
+        #region Constructor
         public Item(string itemID, string itemName, decimal itemPrice) {
             _itemID = itemID;
             _itemName = itemName;
             _itemPrice = itemPrice;
         }
+        #endregion
 
+        #region Public Methods
+        public override string ToString()
+        {
+
+            return _itemID.PadRight(7) + " " + _itemName.PadRight(15);
+        }
+        #endregion
+
+        #region Properties
         public string ItemID {
             get {
                 return _itemID;
@@ -35,12 +52,9 @@ namespace CustomerTracking {
                 return _itemPrice;
             }
         }
+        #endregion
 
-        public override string ToString() {
-
-            return _itemID.PadRight(7) + " " + _itemName.PadRight(15);
-        }
-
+        #region Static Methods
         static public void populateItemList()
         {
 
@@ -61,9 +75,7 @@ namespace CustomerTracking {
 
                 ItemList.Add(new Item(itemID, itemName, itemPrice));
             }
-
-
         }
-
+        #endregion
     }
 }
