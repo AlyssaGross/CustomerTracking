@@ -1,0 +1,5 @@
+﻿R0001	O0005	C0002	07/13/2019
+RL	1	5	1	I did not carefully check the measurements, so the height of the bowls will not work for my dogs.
+R0002	O0006	C0001	04/12/2019
+RL	1	2	1	We ended up only needing two of the gates, so we no longer need the third.
+RL	2	5	1	Like the gates, we only needed two steps.

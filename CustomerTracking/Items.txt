@@ -1,0 +1,36 @@
+﻿I0001	Wellness CORE Grain-Free Small Breed Turkey & Chicken Recipe Dry Dog Food 12-lb	37.99
+I0002	Wellness CORE Grain-Free Ocean Whitefish Herring & Salmon Recipe Dry Dog Food 26-lb	64.99
+I0003	Milk-Bone Soft & Chewy Beef & Filet Mignon Recipe Dog Treats 25-oz	9.49
+I0004	Pet Botanics Training Rewards Bacon Flavor Dog Treats 20-oz	10.75
+I0005	Flexi Classic Retractable Tape Dog Leash	20.99
+I0006	Puppia Soft Black Trim Dog Harness	17.00
+I0007	Frisco Patterned Neoprene Dog Collar	11.25
+I0008	ZippyPaws Skinny Peltz No Stuffing Squeaky Plush Dog Toys 3-pack Large	12.44
+I0009	Nylabone Puppy Chew Teething Pacifier Dog Toy	7.89
+I0010	KONG Classic Dog Toy Large	12.99
+I0011	KONG Wild Knots Bear Dog Toy	11.79
+I0012	GoDog Dragons Chew Guard Dog Toy Coral	12.00
+I0013	Frisco Hide and Seek Plush Volcano Puzzle Dog Toy Refills 3-pack	5.48
+I0014	Benebone Bacon Flavor Wishbone Tough Dog Chew Toy Medium	11.59
+I0015	Benebone Bacon Flavor Wishbone Tough Dog Chew Toy Large	17.95
+I0016	Benebone Maplestick Tough Dog Chew Small	10.62
+I0017	Benebone Maplestick Tough Dog Chew Medium	12.56
+I0018	Frisco Steel-Framed Elevated Dog Bed Small	17.19
+I0019	Frisco Steel-Framed Elevated Dog Bed Medium	19.31
+I0020	Frisco Steel-Framed Elevated Dog Bed Large	21.77
+I0021	Precision Pet Products SnooZZy Round Shearling Bolster Dog Bed 21-in	20.99
+I0022	Frisco Self Warming Lounger Rectangular Pet Bed 30"	12.93
+I0023	Dog Whisperer Mudcloth Teepee Tent Covered Cat & Dog Bed	19.99
+I0024	FurHaven Pet Car Seat Clip	9.95
+I0025	Vet's Best Allergy Itch Relief Shampoo for Dogs 16-oz	11.89
+I0026	Burt's Bees Deodorizing Shampoo with Apple & Rosemary for Dogs 16-oz	8.50
+I0027	Paws & Pals Natural Beef Flavored Dog Toothpaste & Toothbrush	13.95
+I0028	Safari Professional Nail Trimmer for Dogs Small/Medium	8.69
+I0029	FURminator Dual Dog Brush	12.99
+I0030	Frisco Fold & Carry Single Door Collapsible Wire Dog Crate 36-in	37.99
+I0031	Frisco Foldable Nonslip Pet Steps	35.49
+I0032	MyPet Paws Portable Pet Gate	19.49
+I0033	Outward Hound Fun Feeder Interactive Dog Bowl	13.45
+I0034	Petmate Easy Reach Diner Elevated Dog Bowls	25.99
+I0035	Frisco Dog Basic Hoodie	9.99
+I0036	Ultra Paws Rugged Dog Boots Large	39.95
